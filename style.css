@@ -26,6 +26,23 @@ header nav {
   padding: 20px 40px;
 }
 
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav .branding img {
+  width: 100px;
+} */
+
+nav div.nav-links {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
 .nav-links span {
   margin-right: 2em;
   position: relative;
@@ -36,16 +53,21 @@ nav span>i {
   bottom: 5px;
 }
 
-.nav-links span {
+nav div.nav-links span {
   cursor: pointer;
 }
 
-.nav-links span:hover {
+nav div.nav-links span:hover {
   color: var(--red);
+  cursor: pointer;
 }
 
 i.fa-solid.fa-sort-down {
     margin-left: 5px;
+}
+
+#nav-menu-btn {
+  display: none;
 }
 
 header .intro {
@@ -65,7 +87,7 @@ header .intro h1 {
 
 header .intro p {
   margin-top: -30px;
-  width: 55%;
+  width: 60%;
 }
 
 header .intro img {
@@ -161,11 +183,7 @@ header .intro button {
 
 .projects h1 {
   margin-bottom: 0px;
-  margin-left: 70px;
-}
-
-.projects span{
-    margin-left: 70px;
+  /* margin-left: 70px; */
 }
 
 .project-cards span{
@@ -274,4 +292,140 @@ footer .footer>img {
 .socials img {
   margin-right: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+  
+   nav{
+    min-height: 100px;
+  }
+
+   .intro img {
+    display: absolute;
+    margin-top: -400px;
+  }
+
+  .content{
+    margin-left: -580px;
+    margin-top: 500px;
+  }
+
+  nav img {
+    width: 90px;
+  }
+
+  nav div.nav-links {
+    display: none;
+  }
+
+   nav {
+    padding: 20px;
+  }
+
+  .intro {
+    padding: 0 20px;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+    margin-top: 0px;
+  }
+
+   .intro p {
+    margin-top: -10px;
+    width: 100%;
+  }
+
+   .intro button {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .hero .bg-effect {
+    left: 0;
+    top: 460px;
+    height: 950px;
+    width: 100%;
+  }
+
+  .skills {
+    margin: 60px 10px;
+    gap: 2em;
+    display: block;
+  }
+
+  .skill-box {
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .experience {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .experience-cards {
+    margin-left: 20px;
+    gap: 1em;
+  }
+
+  .experience-cards .card {
+    padding: 10px 25px;
+  }
+
+  .projects {
+    margin: 80px 20px;
+    position: relative;
+  }
+
+  .projects h1 {
+    font-size: 1.4rem;
+  }
+
+  .projects button {
+    font-size: 1rem;
+    position: static;
+    display: block;
+    margin-top: 15px;
+    padding: 6px 12px;
+  }
+
+  .project-cards {
+    margin: 0 -30px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 20px 30px;
+    margin: 30px 0px;
+    /* margin: 80px 20px; */
+    position: relative;
+  }
+
+  .contact .text h1 {
+    font-size: 1.4rem;
+  }
+
+  .contact .text {
+    width: 80%;
+  }
+
+  .contact button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+
+  .contact .right{
+    position: absolute;
+    margin-top: 180px;
+  }
+
 }
